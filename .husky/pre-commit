@@ -1,1 +1,1 @@
-bunx lint:fix
+bunx lint-staged
