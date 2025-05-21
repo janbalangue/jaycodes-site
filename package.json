@@ -7,16 +7,21 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "next": "^14.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@types/node": "^22.15.21",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
@@ -34,9 +39,9 @@
     "vite": "^6.3.5"
   },
   "lint-staged": {
-  "*.{js,jsx,ts,tsx}": [
-    "bunx eslint --fix",
-    "bunx prettier --write"
-  ]
-}
+    "*.{js,jsx,ts,tsx}": [
+      "bunx eslint --fix",
+      "bunx prettier --write"
+    ]
+  }
 }
