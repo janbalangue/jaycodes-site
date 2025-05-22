@@ -26,5 +26,10 @@
     "lint-staged": "^16.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "bunx eslint --fix"
+    ]
   }
 }
