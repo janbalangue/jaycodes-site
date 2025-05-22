@@ -1,3 +1,5 @@
+import SubmitButton from "@/components/submit-button";
+
 export default function Contact() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-inter)]">
@@ -17,12 +19,7 @@ export default function Contact() {
             placeholder="Your Message"
             className="p-2 border border-gray-300 rounded"
             ></textarea>
-            <button
-            type="submit"
-            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-200"
-            >
-            Send Message
-            </button>
+            <SubmitButton />
         </form>
         </div>
     );
